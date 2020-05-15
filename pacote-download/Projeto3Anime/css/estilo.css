@@ -1,0 +1,154 @@
+/* Limpar formatações padrões*/
+/* * quer dizer selecionar tudo
+Por padrão os elementos já tem espaçamento
+Pra evitar que tenha alguma incompatibilidade entre navegadores
+Nós definirmos os nosso próprios valores
+*/
+*{
+    padding: 0px;
+    margin: 0px;;
+}
+
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 1em;
+    background: #575656;
+}
+
+
+/* Layout*/
+#area-cabecalho{
+    background: #1804AC;
+    text-align: center;
+    padding: 15px;
+}
+
+#area-logo, #area-menu{
+    padding: 10px;
+}
+
+#area-principal{
+    width: 920px;
+    margin: 0px auto;
+    padding: 15px;
+}
+
+#area-postagens{
+    width: 660px;
+    float: left;
+}
+
+#area-lateral{
+    width: 240px;
+    float: right;
+}
+
+.postagem{
+    background: #BEBCBC;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.conteudo-lateral{
+    background: #BEBCBC;
+    padding: 10px;
+}
+
+.ranking-lateral{
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+
+#rodape{
+    background: #898787;
+    text-align: center;
+    clear: both;
+    padding: 15px;
+}
+
+
+
+/* Formatação do menu*/
+a{
+    text-decoration: none;
+}
+
+/* Quando usamos virgula é porque queremos formatar os dois
+com a mesma formatação 
+*/
+a:link, a:visited {
+    color: #1804AC;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* Mais especifico, queremos formatar os links
+dentro da area-cabecalho*/
+#area-cabecalho a:link, #area-cabecalho a:visited{
+    color: #fff;
+    padding: 8px 12px;
+}
+
+/* O css possuem regras de herança
+A regra geral que tem o underline, uma especifica vai herdar
+Por isso repitimos também na especifica como none*/
+#area-cabecalho a:hover{
+    color: #1804AC;
+    background: #fff;
+    text-decoration: none;
+}
+
+/* Formatações gerais*/
+h1{
+    font-size: 2.5em;
+}
+
+h2{
+    color: #1804AC;
+}
+
+h3{
+    padding: 5px;
+    background: #898787;
+    color: #1804AC;
+}
+
+h4{
+    padding: 4px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.mudar{
+    color: #660B08;
+}
+
+.data-postagem{
+    font-size: 0.8em;
+    border-bottom: 1px dotted black;
+    /*Elementos inline não conseguimos aplicar 
+    padding e nem margin
+    Por isso usamos o display pra mudar o tipo do elemento
+    */
+    display: block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.display{
+    margin-bottom: 5px;
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.afastar{
+    margin-bottom: 5px;
+}
